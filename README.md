@@ -188,7 +188,9 @@ Finally, I learned that reconnaissance and scanning must always be performed wit
 
 ![zenmap output](/screenshots/7_zenmap.png)
 
-![Zenmap scan and topology](/screenshots/8_zenmap2.png)
+![loacal_mac output](/screenshots/8_ifconfig-a.png)
+
+![Zenmap scan and topology](/screenshots/9_topology.png)
 
 -End-
 
