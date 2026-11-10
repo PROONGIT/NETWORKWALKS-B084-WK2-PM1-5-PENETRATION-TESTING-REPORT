@@ -1,0 +1,23 @@
+┌──(kali㉿kali)-[~]
+└─$ ifconfig -a
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.0.2  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::d7f2:821a:e07c:73bd  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:08:12:48  txqueuelen 1000  (Ethernet)
+        RX packets 5320  bytes 4813708 (4.5 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4338  bytes 489975 (478.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 8  bytes 480 (480.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 8  bytes 480 (480.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$  
