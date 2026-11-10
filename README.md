@@ -69,7 +69,7 @@ The table below lists each tool used in this report and its purpose.
 | wafw00f              | Detect whether a Web Application Firewall protects the site.     |
 | dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
-| CMD                  | Local IP and MAC address identification                          |
+| Linux & Windows CMD | Local IP and MAC address identification / confirmation            |
 
 # 4. Activities Performed
 
