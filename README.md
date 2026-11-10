@@ -47,9 +47,9 @@ I have performed these activities only on the systems & devices where I had secu
 
 # 2. Introduction
 
-This report covers footprinting the networkwalks.com domain using multiple Kali Linux tools (W2-PM1) and scanning my own local network with Zenmap (W2-PM5). One module covers the footprinting phase and the other covers the scanning phase, so together they show how an attacker moves from gathering public information to mapping live hosts on a network. It is the Week 2 part of my ongoing internship program at Networkwalks.
+This report covers footprinting the networkwalks.com domain using multiple Kali Linux tools (W2-PM1) and scanning my own local network with Zenmap (W2-PM5). One module covers the footprinting phase and the other covers the scanning phase, so together they show how an attacker moves from gathering public information to mapping live hosts on a network. These activities are part of the Week 2 of my internship program at Networkwalks.
 
-All commands were run in Kali Linux (footprinting) and on a Windows PC with Zenmap installed (scanning). Every step below includes the exact command used, the result I observed, a screenshot as evidence, and a short note on why the finding matters from an attacker's point of view.
+All commands were run in Kali Linux (footprinting and scanning). Every step below includes the exact command used, the result I observed, a screenshot as evidence, and a short note on why the finding matters from an attacker's point of view. The commands outputs are also saved in text files that are available in "/outputs_files" as well as the zenmap topology pdf file.
 
 # 3. Tools Used
 
@@ -57,7 +57,7 @@ The table below lists each tool used in this report and its purpose.
 
 | Tool | Purpose |
 |---|---|
-| Kali Linux & Windows | Operating systems used for reconnaissance activities             |
+| Kali Linux & Windows | Operating systems used in the lab for footprinting and reconnaissance activities|
 | WHOIS                | Find domain registration details (owner, dates, name servers).   |
 | whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
 | nslookup             | Resolve the domain name to its IP address using DNS.             |
@@ -65,7 +65,7 @@ The table below lists each tool used in this report and its purpose.
 | wafw00f              | Detect whether a Web Application Firewall protects the site.     |
 | dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
-| Windows CMD          | Local IP and MAC address identification                          |
+| CMD                  | Local IP and MAC address identification                          |
 
 # 4. Activities Performed
 
