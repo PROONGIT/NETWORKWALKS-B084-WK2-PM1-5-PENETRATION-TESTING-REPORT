@@ -43,7 +43,9 @@
 
 # 1. Liability Disclaimer
 
-I have performed these activities only on the systems & devices where I had secured written permission or the devices/systems that I own myself. All these materials are for education and research purpose only. Do not use anything from here to break the law. The instructor, the authors and Networkwalks are not responsible for what you do with this knowledge. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
+I have performed these activities only on the systems & devices where I had secured written permission or the devices/systems that I own myself. All these materials are for education and research purpose only. 
+
+Do not use anything from here to break the law. The instructor, the authors and Networkwalks are not responsible for what you do with this knowledge. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
 
 # 2. Introduction
 
@@ -75,7 +77,7 @@ I performed reconnaissance against the `networkwalks.com` domain using six Kali 
 
 First, I used **WHOIS** to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
 
-I then used **WhatWeb** to identify technologies used by the website. The results identified **WordPress 7.0.4** and **WP Download Manager 3.3.58**, along with other information exposed by the website.
+I then used **WhatWeb** to identify technologies used by the website. The results identified **WordPress 7.1.4**, **WordPress Download Manager 3.3.76**, **Bootstrap 7.1.4** and **JQuery 3.7.1**, along with other informations exposed by the website.
 
 Using **Nslookup**, I resolved the domain name to its IP address. The provided result identified **192.232.216.135**.
 
@@ -87,11 +89,11 @@ Finally, I used **DNSRecon** to enumerate DNS records. The results provided info
 
 ## 4.2 Network Scanning with Zenmap
 
-For the second activity, I used **Zenmap** to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
+For the second activity, I launched the GUI of **Zenmap** from my Kali Linux. I used Zenmap to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
 
-I first used the Windows `ipconfig` command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
+I first used the `ifconfig -a` command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
 
-The example results provided in the practical identified four live hosts:
+The results identified four live hosts:
 
 - `10.0.0.1`
 - `10.0.0.4`
