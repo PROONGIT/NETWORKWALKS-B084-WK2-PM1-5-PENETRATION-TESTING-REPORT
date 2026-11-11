@@ -236,14 +236,15 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 |----------|-------|-------|--------|
 |  | ├─ 📂screenshots|├─ 📂outputs_files|Folders|
 | `whois networkwalks.com` | ├── [1_whois.png](/screenshots/1_whois.png)| ├── [1_whois.txt](/outputs_files/1_whois.txt)  |  hjhhk  
-|  `whatweb networkwalks.com`| | ├── [2_whatweb.txt](/outputs_files/2_whatweb.txt) | | 
-|   `nslookup networkwalks.com` | | ├── [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
-| `curl -I https://networkwalks.com`| | ├── [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
-| `wafw00f networkwalks.com` | | ├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
-| `dnsrecon -d networkwalks.com`| | ├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
-|  `nmap -sn 10.0.0.0/24` | | ├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
-| `ifconfig -a` | | ├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
-| `Topology -> Save Graphic` | | └── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | |
+|  `whatweb networkwalks.com`|├── [2_whatweb.png](/screenshots/2_whatweb.png) | ├── [2_whatweb.txt](/outputs_files/2_whatweb.txt) | | 
+|   `nslookup networkwalks.com` | ├── [3_nslookup.png](/screenshots/3_nslookup.png)| ├── [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
+| `curl -I https://networkwalks.com`|├── [4_curl.png](/screenshots/4_curl.png) | ├── [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
+| `wafw00f networkwalks.com` |├── [5_wafw00f.png](/screenshots/5_wafw00f.png) | ├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
+| `dnsrecon -d networkwalks.com`|├── [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
+|  `nmap -sn 10.0.0.0/24` |├── [7_zenmap.png](/screenshots/7_zenmap.png) | ├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
+| `ifconfig -a` |├── [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
+| `Topology -> Save Graphic` |├── [9_zenmap_topology.png](/screenshots/9_zenmap_topology.png) | ├── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | |
+| `ipconfig /all` | └── [ipconfig_all.png](/screenshots/ipconfig_all.png) | └── [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | |   
 
 ---
 
