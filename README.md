@@ -93,18 +93,29 @@ Finally, I used **DNSRecon** to enumerate DNS records. The results provided info
 
 For the second activity, I launched the GUI of **Zenmap** from my Kali Linux. I used Zenmap to perform network discovery on my local network. The practical required me to identify my local IP address and subnet, discover live hosts, identify their IP and MAC addresses, and generate a network topology.
 
-I first used the `ifconfig -a` command to identify my local IP address and LAN subnet. I then entered the subnet into Zenmap and selected **Ping Scan** to identify active hosts.
+I first used the `ifconfig -a` command on the Kali VM to identify my local IP address (**`10.0.0.2`**) and LAN subnet (**`10.0.0.0/24`**). I then entered the subnet into Zenmap and selected **`Ping Scan`** to identify active hosts. 
 
-The results identified four live hosts:
+And I scanned with the command : 
+
+````bash
+nmap -sn 10.0.0.0/24
+````
+
+The results identified three live hosts:
 
 - `10.0.0.1`
-- `10.0.0.4`
-- `10.0.0.19`
-- `10.0.0.5`
+- `10.0.0.7`
+- `10.0.0.2`
 
-The example results also included four MAC addresses.
+The results also included two MAC addresses.
 
-After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format as required by the practical task.
+|Live Hosts       | IP Address | MAC Address | Local VM Name |
+|-----------------|------------|-------------|---------------|
+|QEMU virtual NIC | 10.0.0.1 | 52:54:00:12:35:00 | Gateway |
+|Oracle VirtualBox virtual NIC | 10.0.0.7| 08:00:27:CE:C9:16 | Windows7 VM |
+|Zenmap Host  | 10.0.0.2 | 08:00:27:08:12:48| KALI_LINUX VM |
+
+After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format. The topology pdf file is available at /outputs_files/9_zenmap_topology.pdf
 
 **Note:** The actual subnet, number of hosts and addresses should be replaced with the results from my own network when submitting the report.
 
