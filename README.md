@@ -129,8 +129,6 @@ The results also included two MAC addresses.
 
 After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format. The topology pdf file is available at /outputs_files/9_topology.pdf
 
-**Note:** The actual subnet, number of hosts and addresses should be replaced with the results from my own network when submitting the report.
-
 ---
 
 # 5. Risk Analysis / Impact
