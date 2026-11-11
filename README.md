@@ -270,7 +270,7 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ![windows_mac output](/screenshots/ipconfig_all.png)
 
-![Zenmap scan and topology](/screenshots/9_topology.png)
+![Zenmap scan and topology](/screenshots/9_zenmap_topology.png)
 
 -End-
 
