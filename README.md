@@ -251,95 +251,14 @@ Finally, I used **DNSRecon** to enumerate DNS records. The results provided info
 |  | ├ 📂screenshots|├ 📂outputs_files|Folders|
 | `whois networkwalks.com` | ├─ [1_whois.png](/screenshots/1_whois.png)| ├─ [1_whois.txt](/outputs_files/1_whois.txt)  |  Found domain registration details  
 |  `whatweb networkwalks.com`|├─ [2_whatweb.png](/screenshots/2_whatweb.png) | ├─ [2_whatweb.txt](/outputs_files/2_whatweb.txt) | Identified used technologies | 
-|   `nslookup networkwalks.com` | ├─ [3_nslookup.png](/screenshots/3_nslookup.png)| ├─ [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
-| `curl -I https://networkwalks.com`|├─ [4_curl.png](/screenshots/4_curl.png) | ├─ [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
-| `wafw00f networkwalks.com` |├─ [5_wafw00f.png](/screenshots/5_wafw00f.png) | ├─ [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
-| `dnsrecon -d networkwalks.com`|├─ [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├─ [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
-|  `nmap -sn 10.0.0.0/24` |├─ [7_zenmap.png](/screenshots/7_zenmap.png) | ├─ [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
-| `ifconfig -a` |├─ [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├─ [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
-| `Topology -> Save Graphic` |├─ [9_topology.png](/screenshots/9_topology.png) | ├─ [9_topology.pdf](/outputs_files/9_topology.pdf)  | |
-| `ipconfig /all` | └─ [ipconfig_all.png](/screenshots/ipconfig_all.png) | └─ [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | |   
-
----
-
-<table>
-  <thead>
-    <tr>
-      <th width="300">Command</th>
-      <th width="250">Screenshot</th>
-      <th width="250">Output File</th>
-      <th width="200">Comments</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td>📂 screenshots</td>
-      <td>📂 outputs_files</td>
-      <td>Folders</td>
-    </tr>
-    <tr>
-      <td><code>whois networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/1_whois.png">1_whois.png</a></td>
-      <td>├─ <a href="outputs_files/1_whois.txt">1_whois.txt</a></td>
-      <td>Found domain registration details</td>
-    </tr>
-    <tr>
-      <td><code>whatweb networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/2_whatweb.png">2_whatweb.png</a></td>
-      <td>├─ <a href="outputs_files/2_whatweb.txt">2_whatweb.txt</a></td>
-      <td>Identified used technologies</td>
-    </tr>
-    <tr>
-      <td><code>nslookup networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/3_nslookup.png">3_nslookup.png</a></td>
-      <td>├─ <a href="outputs_files/3_nslookup.txt">3_nslookup.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>curl -I https://networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/4_curl.png">4_curl.png</a></td>
-      <td>├─ <a href="outputs_files/4_curl.txt">4_curl.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>wafw00f networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/5_wafw00f.png">5_wafw00f.png</a></td>
-      <td>├─ <a href="outputs_files/5_wafw00f.txt">5_wafw00f.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>dnsrecon -d networkwalks.com</code></td>
-      <td>├─ <a href="screenshots/6_dnsrecon.png">6_dnsrecon.png</a></td>
-      <td>├─ <a href="outputs_files/6_dnsrecon.txt">6_dnsrecon.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>nmap -sn 10.0.0.0/24</code></td>
-      <td>├─ <a href="screenshots/7_zenmap.png">7_zenmap.png</a></td>
-      <td>├─ <a href="outputs_files/7_zenmap.txt">7_zenmap.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>ifconfig -a</code></td>
-      <td>├─ <a href="screenshots/8_ifconfig-a.png">8_ifconfig-a.png</a></td>
-      <td>├─ <a href="outputs_files/8_ifconfig-a.txt">8_ifconfig-a.txt</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>Topology -&gt; Save Graphic</code></td>
-      <td>├─ <a href="screenshots/9_topology.png">9_topology.png</a></td>
-      <td>├─ <a href="outputs_files/9_topology.pdf">9_topology.pdf</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>ipconfig /all</code></td>
-      <td>└─ <a href="screenshots/ipconfig_all.png">ipconfig_all.png</a></td>
-      <td>└─ <a href="outputs_files/ipconfig_all.txt">ipconfig_all.txt</a></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+|   `nslookup networkwalks.com` | ├─ [3_nslookup.png](/screenshots/3_nslookup.png)| ├─ [3_nslookup.txt](/outputs_files/3_nslookup.txt) | Resolved the domain name to its IP address    |
+| `curl -I https://networkwalks.com`|├─ [4_curl.png](/screenshots/4_curl.png) | ├─ [4_curl.txt](/outputs_files/4_curl.txt) | Inspected HTTP response headers  |                 
+| `wafw00f networkwalks.com` |├─ [5_wafw00f.png](/screenshots/5_wafw00f.png) | ├─ [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  | Determined Web Application Firewall    |              
+| `dnsrecon -d networkwalks.com`|├─ [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├─ [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | Enumerated DNS records|              
+|  `nmap -sn 10.0.0.0/24` |├─ [7_zenmap.png](/screenshots/7_zenmap.png) | ├─ [7_zenmap.txt](/outputs_files/7_zenmap.txt) | Scanned local network |
+| `ifconfig -a` |├─ [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├─ [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | Found local VM MAC address |   
+| `Topology -> Save Graphic` |├─ [9_topology.png](/screenshots/9_topology.png) | ├─ [9_topology.pdf](/outputs_files/9_topology.pdf)  | Drew the network topology |
+| `ipconfig /all` | └─ [ipconfig_all.png](/screenshots/ipconfig_all.png) | └─ [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | Confirmed Windows VM's MAC and IP addresses |   
 
 ---
 
