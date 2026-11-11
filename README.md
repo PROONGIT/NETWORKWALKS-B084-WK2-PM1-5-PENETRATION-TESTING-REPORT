@@ -127,7 +127,7 @@ The results also included two MAC addresses.
 |Oracle VirtualBox virtual NIC | 10.0.0.7| 08:00:27:CE:C9:16 | Windows7 VM |
 |Zenmap Host  | 10.0.0.2 | 08:00:27:08:12:48| KALI_LINUX VM |
 
-After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format. The topology pdf file is available at /outputs_files/9_zenmap_topology.pdf
+After completing the scan, I opened the **Topology** section in Zenmap, enabled the legend and saved the network topology in PDF format. The topology pdf file is available at /outputs_files/9_topology.pdf
 
 **Note:** The actual subnet, number of hosts and addresses should be replaced with the results from my own network when submitting the report.
 
@@ -243,7 +243,7 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 | `dnsrecon -d networkwalks.com`|├── [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
 |  `nmap -sn 10.0.0.0/24` |├── [7_zenmap.png](/screenshots/7_zenmap.png) | ├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
 | `ifconfig -a` |├── [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
-| `Topology -> Save Graphic` |├── [9_zenmap_topology.png](/screenshots/9_zenmap_topology.png) | ├── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | |
+| `Topology -> Save Graphic` |├── [9_topology.png](/screenshots/9_topology.png) | ├── [9_topology.pdf](/outputs_files/9_topology.pdf)  | |
 | `ipconfig /all` | └── [ipconfig_all.png](/screenshots/ipconfig_all.png) | └── [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | |   
 
 ---
@@ -270,7 +270,7 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ![windows_mac output](/screenshots/ipconfig_all.png)
 
-![Zenmap scan and topology](/screenshots/9_zenmap_topology.png)
+![Zenmap scan and topology](/screenshots/9_topology.png)
 
 -End-
 
