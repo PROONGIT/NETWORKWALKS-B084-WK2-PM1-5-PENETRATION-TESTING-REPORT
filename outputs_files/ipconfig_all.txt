@@ -1,0 +1,33 @@
+C:\Windows\System32>ipconfig /all
+
+Configuration IP de Windows
+
+   Nom de l’hôte . . . . . . . . . . : win7-PC
+   Suffixe DNS principal . . . . . . :
+   Type de noeud. . . . . . . . . .  : Hybride
+   Routage IP activé . . . . . . . . : Non
+   Proxy WINS activé . . . . . . . . : Non
+
+Carte Ethernet Connexion au réseau local :
+
+   Suffixe DNS propre à la connexion. . . :
+   Description. . . . . . . . . . . . . . : Carte Intel <R> PRO 1000/MT pour station de travail
+   Adresse physique . . . . . . . . . . . : 08-00-27-CE-C9-16
+   DHCP activé. . . . . . . . . . . . . . : Non
+   Configuration automatique activée. . . : Oui
+   Adresse IPv4. . . . . . . . . . . . . .: 10.0.0.7(préféré)
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . : 10.0.0.1
+   Serveurs DNS. . .  . . . . . . . . . . : 8.8.8.8
+   NetBIOS sur Tcpip. . . . . . . . . . . : Activé
+
+Carte Tunnel isatap.{71C90792-20E8-4145-9800-C3080D8FA642} :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+   Description. . . . . . . . . . . . . . : Carte Microsoft ISATAP
+   Adresse physique . . . . . . . . . . . : 00-00-00-00-00-00-00-E0
+   DHCP activé. . . . . . . . . . . . . . : Non
+   Configuration automatique activée. . . : Oui
+
+C:\Windows\System32>
