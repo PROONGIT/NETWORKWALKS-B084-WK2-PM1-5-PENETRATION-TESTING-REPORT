@@ -265,10 +265,10 @@ Finally, I used **DNSRecon** to enumerate DNS records. The results provided info
 <table>
   <thead>
     <tr>
-      <th width="30%">Command</th>
-      <th width="25%">Screenshot</th>
-      <th width="25%">Output File</th>
-      <th width="20%">Comments</th>
+      <th width="300">Command</th>
+      <th width="250">Screenshot</th>
+      <th width="250">Output File</th>
+      <th width="200">Comments</th>
     </tr>
   </thead>
   <tbody>
