@@ -235,29 +235,69 @@ The outputs files and screenshots are respectively stored in the **`/outputs_fil
 
 ---
 
-## 📷Screenshots
+## 📷Screenshots Gallery
 
-*Screenshots collected as evidence during the activities (stored in the **`/screenshots/`** folder):*
+*Screenshots collected as evidence during the activities.*
+
+---
+
+### whois
 
 ![whois output](/screenshots/1_whois.png)
 
+---
+
+### whatweb
+
 ![whatweb output](/screenshots/2_whatweb.png)
+
+---
+
+### nslookup
 
 ![nslookup output](/screenshots/3_nslookup.png)
 
+---
+
+### curl
+
 ![curl output](/screenshots/4_curl.png)
+
+---
+
+### wafw00f
 
 ![wafw00f output](/screenshots/5_wafw00f.png)
 
+---
+
+### dnsrecon
+
 ![dnsrecon output](/screenshots/6_dnsrecon.png)
+
+---
+
+### zenmap scan
 
 ![zenmap output](/screenshots/7_zenmap.png)
 
+---
+
+### ifconfig
+
 ![loacal_mac output](/screenshots/8_ifconfig-a.png)
 
-![windows_mac output](/screenshots/ipconfig_all.png)
+---
+
+### zenmap topology
 
 ![Zenmap scan and topology](/screenshots/9_topology.png)
+
+---
+
+### ipconfig
+
+![windows_mac output](/screenshots/ipconfig_all.png)
 
 -End-
 
