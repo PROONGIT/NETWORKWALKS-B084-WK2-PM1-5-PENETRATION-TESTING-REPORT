@@ -209,29 +209,6 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ---
 
-## 📄Output files
-
-*The outputs of executed commands are saved in files as evidence during the activities (stored in the **`/outputs_files/`** folder):*
-
-### The /outputs_files/ folder content 
-
----
-
-|Output File| Command |
-|-------|--------|
-| ├─ 📂outputs_files|Folder|
-| ├── [1_whois.txt](/outputs_files/1_whois.txt) | `whois networkwalks.com` |    
-├── [2_whatweb.txt](/outputs_files/2_whatweb.txt)     |  `whatweb networkwalks.com` 
-├── [3_nslookup.txt](/outputs_files/3_nslookup.txt)    |      `nslookup networkwalks.com`
-├── [4_curl.txt](/outputs_files/4_curl.txt)         |  `curl -I https://networkwalks.com`                
-├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)       |  `wafw00f networkwalks.com`            
-├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt)       | `dnsrecon -d networkwalks.com`        
-├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) |  `nmap -sn 10.0.0.0/24`
-├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt)     | `ifconfig -a`
-└── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | `Topology -> Save Graphic`
-
----
-
 ## 📷Screenshots
 
 *Screenshots collected as evidence during the activities (stored in the **`/screenshots/`** folder):*
@@ -255,6 +232,30 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 ![loacal_mac output](/screenshots/10_ipconfig_all.png)
 
 ![Zenmap scan and topology](/screenshots/9_topology.png)
+
+---
+
+## 📄Output files
+
+*The outputs of executed commands are saved in files as evidence during the activities (stored in the **`/outputs_files/`** folder):*
+
+### The /outputs_files/ folder content 
+
+---
+
+|Output File| Command |
+|-------|--------|
+| ├─ 📂outputs_files|Folder|
+| ├── [1_whois.txt](/outputs_files/1_whois.txt) | `whois networkwalks.com` |    
+├── [2_whatweb.txt](/outputs_files/2_whatweb.txt)     |  `whatweb networkwalks.com` 
+├── [3_nslookup.txt](/outputs_files/3_nslookup.txt)    |      `nslookup networkwalks.com`
+├── [4_curl.txt](/outputs_files/4_curl.txt)         |  `curl -I https://networkwalks.com`                
+├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)       |  `wafw00f networkwalks.com`            
+├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt)       | `dnsrecon -d networkwalks.com`        
+├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) |  `nmap -sn 10.0.0.0/24`
+├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt)     | `ifconfig -a`
+└── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | `Topology -> Save Graphic`
+
 
 -End-
 
