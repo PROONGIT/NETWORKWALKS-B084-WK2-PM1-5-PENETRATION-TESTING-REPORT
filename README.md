@@ -217,18 +217,33 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ---
 
-|Output File| Command |
-|-------|--------|
-| ├─ 📂outputs_files|Folder|
-| ├── [1_whois.txt](/outputs_files/1_whois.txt) | `whois networkwalks.com` |    
-├── [2_whatweb.txt](/outputs_files/2_whatweb.txt)     |  `whatweb networkwalks.com` 
-├── [3_nslookup.txt](/outputs_files/3_nslookup.txt)    |      `nslookup networkwalks.com`
-├── [4_curl.txt](/outputs_files/4_curl.txt)         |  `curl -I https://networkwalks.com`                
-├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)       |  `wafw00f networkwalks.com`            
-├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt)       | `dnsrecon -d networkwalks.com`        
-├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) |  `nmap -sn 10.0.0.0/24`
-├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt)     | `ifconfig -a`
-└── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | `Topology -> Save Graphic`
+| Tool | Purpose |
+|---|---|
+| Kali Linux & Windows | Operating systems used in the lab for footprinting and reconnaissance activities|
+| WHOIS                | Find domain registration details (owner, dates, name servers).   |
+| whatweb              | Fingerprint web technologies (server, CMS, plugins, IP).         |
+| nslookup             | Resolve the domain name to its IP address using DNS.             |
+| curl -I              | Read the HTTP response headers of the website.                   |
+| wafw00f              | Detect whether a Web Application Firewall protects the site.     |
+| dnsrecon             | Enumerate all DNS records (NS, MX, SPF, TXT, SRV).               |
+| Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
+| Linux & Windows CMD | Local IP and MAC address identification / confirmation            |
+
+---
+
+
+| Command | Screenshot | Output File| Comments |
+|----------|-------|-------|--------|
+|  | ├─ 📂screenshots|├─ 📂outputs_files|Folders|
+| `whois networkwalks.com` | ├── [1_whois.png](/screenshots/1_whois.png)| ├── [1_whois.txt](/outputs_files/1_whois.txt)  |  hjhhk  
+|  `whatweb networkwalks.com`| | ├── [2_whatweb.txt](/outputs_files/2_whatweb.txt) | | 
+|   `nslookup networkwalks.com` | | ├── [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
+| `curl -I https://networkwalks.com`| | ├── [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
+| `wafw00f networkwalks.com` | | ├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
+| `dnsrecon -d networkwalks.com`| | ├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
+|  `nmap -sn 10.0.0.0/24` | | ├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
+| `ifconfig -a` | | ├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
+| `Topology -> Save Graphic` | | └── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | |
 
 ---
 
