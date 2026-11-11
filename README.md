@@ -229,7 +229,7 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ![loacal_mac output](/screenshots/8_ifconfig-a.png)
 
-![loacal_mac output](/screenshots/10_ipconfig_all.png)
+![windows_mac output](/screenshots/ipconfig_all.png)
 
 ![Zenmap scan and topology](/screenshots/9_topology.png)
 
