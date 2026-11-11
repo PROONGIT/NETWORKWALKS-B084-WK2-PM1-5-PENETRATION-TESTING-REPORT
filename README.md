@@ -39,7 +39,7 @@
 | **Program/Batch** | B084-Networkwalks |
 | **Date** | 10 November 2026 |
 | **Modules completed** | W2-PM1 (Multiple Kali Tools)<br>W2-PM5 (Zenmap Scanning) |
-| **Client/Target** | 1. Networkwalks (secured written permission already)<br>2. My own local LAN Network |
+| **Scope [Client/Target]** | 1. Networkwalks (secured written permission already)<br>2. My own local LAN Network |
 | **Permission secured from client?** | Yes |
 | **Phases covered** | **Phase 1:** Reconnaissance & Footprinting<br>**Phase 2:** Scanning & Network Discovery<br>**Phase 3-5:** In Progress |
 
@@ -209,13 +209,12 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 
 ---
 
-## 📄Output files
+## 📄Commands and collected files
 
-*The outputs of executed commands are saved in files as evidence during the activities (stored in the **`/outputs_files/`** folder):*
+*The outputs of executed commands are saved in files and screenshots are collected as evidences during the activities.*
 
-### The /outputs_files/ folder content 
+The outputs files and screenshots are respectively stored in the **`/outputs_files/`** and **`/screenshots/`** folders.
 
----
 
 | Tool | Purpose |
 |---|---|
@@ -229,22 +228,118 @@ Finally, I demonstrated that reconnaissance and scanning must always be performe
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
 | Linux & Windows CMD | Local IP and MAC address identification / confirmation            |
 
+I performed reconnaissance against the `networkwalks.com` domain using six Kali Linux tools: **WHOIS, WhatWeb, Nslookup, Curl, Wafw00f and DNSRecon**. Each tool was used to collect a different type of information about the target.
+
+First, I used **WHOIS** to obtain publicly available domain registration information and identify the domain’s name servers. The results provided information about the domain registration and hosting infrastructure.
+
+I then used **WhatWeb** to identify technologies used by the website. The results identified **WordPress 7.1.4**, **WordPress Download Manager 3.3.76**, **Bootstrap 7.1.4** and **JQuery 3.7.1**, along with other informations exposed by the website.
+
+Using **Nslookup**, I resolved the domain name to its IP address. The provided result identified **192.232.216.135**.
+
+I used **Curl** with the `-I` option to inspect the HTTP response headers. This provided additional information about the web application and exposed the WordPress REST API endpoint `/wp-json/`.
+
+Next, I used **Wafw00f** to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
+
+Finally, I used **DNSRecon** to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
+
 ---
 
+### The contents of the /outputs_files/ and /screenshots/ folders 
 
 | Command | Screenshot | Output File| Comments |
 |----------|-------|-------|--------|
-|  | ├─ 📂screenshots|├─ 📂outputs_files|Folders|
-| `whois networkwalks.com` | ├── [1_whois.png](/screenshots/1_whois.png)| ├── [1_whois.txt](/outputs_files/1_whois.txt)  |  hjhhk  
-|  `whatweb networkwalks.com`|├── [2_whatweb.png](/screenshots/2_whatweb.png) | ├── [2_whatweb.txt](/outputs_files/2_whatweb.txt) | | 
-|   `nslookup networkwalks.com` | ├── [3_nslookup.png](/screenshots/3_nslookup.png)| ├── [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
-| `curl -I https://networkwalks.com`|├── [4_curl.png](/screenshots/4_curl.png) | ├── [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
-| `wafw00f networkwalks.com` |├── [5_wafw00f.png](/screenshots/5_wafw00f.png) | ├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
-| `dnsrecon -d networkwalks.com`|├── [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
-|  `nmap -sn 10.0.0.0/24` |├── [7_zenmap.png](/screenshots/7_zenmap.png) | ├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
-| `ifconfig -a` |├── [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
-| `Topology -> Save Graphic` |├── [9_topology.png](/screenshots/9_topology.png) | ├── [9_topology.pdf](/outputs_files/9_topology.pdf)  | |
-| `ipconfig /all` | └── [ipconfig_all.png](/screenshots/ipconfig_all.png) | └── [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | |   
+|  | ├ 📂screenshots|├ 📂outputs_files|Folders|
+| `whois networkwalks.com` | ├─ [1_whois.png](/screenshots/1_whois.png)| ├─ [1_whois.txt](/outputs_files/1_whois.txt)  |  Found domain registration details  
+|  `whatweb networkwalks.com`|├─ [2_whatweb.png](/screenshots/2_whatweb.png) | ├─ [2_whatweb.txt](/outputs_files/2_whatweb.txt) | Identified used technologies | 
+|   `nslookup networkwalks.com` | ├─ [3_nslookup.png](/screenshots/3_nslookup.png)| ├─ [3_nslookup.txt](/outputs_files/3_nslookup.txt) |    |
+| `curl -I https://networkwalks.com`|├─ [4_curl.png](/screenshots/4_curl.png) | ├─ [4_curl.txt](/outputs_files/4_curl.txt) |        |                 
+| `wafw00f networkwalks.com` |├─ [5_wafw00f.png](/screenshots/5_wafw00f.png) | ├─ [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)  |     |              
+| `dnsrecon -d networkwalks.com`|├─ [6_dnsrecon.png](/screenshots/6_dnsrecon.png) | ├─ [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt) | |              
+|  `nmap -sn 10.0.0.0/24` |├─ [7_zenmap.png](/screenshots/7_zenmap.png) | ├─ [7_zenmap.txt](/outputs_files/7_zenmap.txt) | |
+| `ifconfig -a` |├─ [8_ifconfig-a.png](/screenshots/8_ifconfig-a.png) | ├─ [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt) | |   
+| `Topology -> Save Graphic` |├─ [9_topology.png](/screenshots/9_topology.png) | ├─ [9_topology.pdf](/outputs_files/9_topology.pdf)  | |
+| `ipconfig /all` | └─ [ipconfig_all.png](/screenshots/ipconfig_all.png) | └─ [ipconfig_all.txt](/outputs_files/ipconfig_all.txt) | |   
+
+---
+
+<table>
+  <thead>
+    <tr>
+      <th width="30%">Command</th>
+      <th width="25%">Screenshot</th>
+      <th width="25%">Output File</th>
+      <th width="20%">Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>📂 screenshots</td>
+      <td>📂 outputs_files</td>
+      <td>Folders</td>
+    </tr>
+    <tr>
+      <td><code>whois networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/1_whois.png">1_whois.png</a></td>
+      <td>├─ <a href="outputs_files/1_whois.txt">1_whois.txt</a></td>
+      <td>Found domain registration details</td>
+    </tr>
+    <tr>
+      <td><code>whatweb networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/2_whatweb.png">2_whatweb.png</a></td>
+      <td>├─ <a href="outputs_files/2_whatweb.txt">2_whatweb.txt</a></td>
+      <td>Identified used technologies</td>
+    </tr>
+    <tr>
+      <td><code>nslookup networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/3_nslookup.png">3_nslookup.png</a></td>
+      <td>├─ <a href="outputs_files/3_nslookup.txt">3_nslookup.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>curl -I https://networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/4_curl.png">4_curl.png</a></td>
+      <td>├─ <a href="outputs_files/4_curl.txt">4_curl.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>wafw00f networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/5_wafw00f.png">5_wafw00f.png</a></td>
+      <td>├─ <a href="outputs_files/5_wafw00f.txt">5_wafw00f.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>dnsrecon -d networkwalks.com</code></td>
+      <td>├─ <a href="screenshots/6_dnsrecon.png">6_dnsrecon.png</a></td>
+      <td>├─ <a href="outputs_files/6_dnsrecon.txt">6_dnsrecon.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>nmap -sn 10.0.0.0/24</code></td>
+      <td>├─ <a href="screenshots/7_zenmap.png">7_zenmap.png</a></td>
+      <td>├─ <a href="outputs_files/7_zenmap.txt">7_zenmap.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>ifconfig -a</code></td>
+      <td>├─ <a href="screenshots/8_ifconfig-a.png">8_ifconfig-a.png</a></td>
+      <td>├─ <a href="outputs_files/8_ifconfig-a.txt">8_ifconfig-a.txt</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>Topology -&gt; Save Graphic</code></td>
+      <td>├─ <a href="screenshots/9_topology.png">9_topology.png</a></td>
+      <td>├─ <a href="outputs_files/9_topology.pdf">9_topology.pdf</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>ipconfig /all</code></td>
+      <td>└─ <a href="screenshots/ipconfig_all.png">ipconfig_all.png</a></td>
+      <td>└─ <a href="outputs_files/ipconfig_all.txt">ipconfig_all.txt</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
