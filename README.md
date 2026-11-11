@@ -43,17 +43,23 @@
 | **Permission secured from client?** | Yes |
 | **Phases covered** | **Phase 1:** Reconnaissance & Footprinting<br>**Phase 2:** Scanning & Network Discovery<br>**Phase 3-5:** In Progress |
 
+---
+
 # 1. Liability Disclaimer
 
 I have performed these activities only on the systems & devices where I had secured written permission or the devices/systems that I own myself. All these materials are for education and research purpose only. 
 
 Do not use anything from here to break the law. The instructor, the authors and Networkwalks are not responsible for what you do with this knowledge. Every action you take is your own responsibility. Misuse can lead to criminal charges, heavy fines, loss of your job and a permanent record. In most countries unauthorised access is a crime even when nothing is damaged.
 
+---
+
 # 2. Introduction
 
 This report covers footprinting the networkwalks.com domain using multiple Kali Linux tools (W2-PM1) and scanning my own local network with Zenmap (W2-PM5). One module covers the footprinting phase and the other covers the scanning phase, so together they show how an attacker moves from gathering public information to mapping live hosts on a network. These activities are part of the Week 2 of my internship program at Networkwalks.
 
 All commands were run in Kali Linux (footprinting and scanning). Every step below includes the exact command used, the result I observed, a screenshot as evidence, and a short note on why the finding matters from an attacker's point of view. The commands outputs are also saved in text files that are available in "/outputs_files" as well as the zenmap topology pdf file.
+
+---
 
 # 3. Tools Used
 
@@ -71,7 +77,11 @@ The table below lists each tool used in this report and its purpose.
 | Zenmap (Nmap GUI)    | Scan the local subnet to find live hosts, IPs and MAC addresses. |
 | Linux & Windows CMD | Local IP and MAC address identification / confirmation            |
 
+---
+
 # 4. Activities Performed
+
+---
 
 ## 4.1 Footprinting & Reconnaissance
 
@@ -88,6 +98,8 @@ I used **Curl** with the `-I` option to inspect the HTTP response headers. This 
 Next, I used **Wafw00f** to determine whether a Web Application Firewall was protecting the website. The result identified **ModSecurity (SpiderLabs)**.
 
 Finally, I used **DNSRecon** to enumerate DNS records. The results provided information relating to name servers, mail servers, SPF/TXT records, service records and DNS software information.
+
+---
 
 ## 4.2 Network Scanning with Zenmap
 
@@ -119,6 +131,8 @@ After completing the scan, I opened the **Topology** section in Zenmap, enabled 
 
 **Note:** The actual subnet, number of hosts and addresses should be replaced with the results from my own network when submitting the report.
 
+---
+
 # 5. Risk Analysis / Impact
 
 Based on the information collected during the footprinting and network scanning activities, I identified the following potential risks.
@@ -139,6 +153,8 @@ The risks above are observations from the footprinting and scanning exercises, n
 The practical exercises primarily involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these two modules.
 
 Therefore, the presence of information such as a software version, IP address or DNS record does not by itself mean that the system is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+
+---
 
 # 6. Recommendations
 
@@ -171,6 +187,8 @@ Based on the observations from these activities, I recommend the following secur
 9.  **Perform security testing with authorization**  
     Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
 
+---
+
 # 7. Conclusion
 
 During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting, reconnaissance and network scanning.
@@ -185,9 +203,38 @@ I also demonsrated that technical findings should be documented clearly. A good 
 
 Finally, I demonstrated that reconnaissance and scanning must always be performed within an authorized scope. These activities were completed as part of the Networkwalks Cybersecurity internsgip program.
 
+---
+
 # 8. Evidences Collected
 
-*Screenshots collected as evidence during the activities (stored in the `screenshots/` folder):*
+---
+
+## 📄Output files
+
+*The outputs of executed commands are saved in files as evidence during the activities (stored in the **`/outputs_files/`** folder):*
+
+### The /outputs_files/ folder content 
+
+---
+
+|Output File| Command |
+|-------|--------|
+| ├─ 📂outputs_files|Folder|
+| ├── [1_whois.txt](/outputs_files/1_whois.txt) | `whois networkwalks.com` |    
+├── [2_whatweb.txt](/outputs_files/2_whatweb.txt)     |  `whatweb networkwalks.com` 
+├── [3_nslookup.txt](/outputs_files/3_nslookup.txt)    |      `nslookup networkwalks.com`
+├── [4_curl.txt](/outputs_files/4_curl.txt)         |  `curl -I https://networkwalks.com`                
+├── [5_wafw00f.txt](/outputs_files/5_wafw00f.txt)       |  `wafw00f networkwalks.com`            
+├── [6_dnsrecon.txt](/outputs_files/6_dnsrecon.txt)       | `dnsrecon -d networkwalks.com`        
+├── [7_zenmap.txt](/outputs_files/7_zenmap.txt) |  `nmap -sn 10.0.0.0/24`
+├── [8_ifconfig-a.txt](/outputs_files/8_ifconfig-a.txt)     | `ifconfig -a`
+└── [9_zenmap_topology.pdf](/outputs_files/9_zenmap_topology.pdf)  | `Topology -> Save Graphic`
+
+---
+
+## 📷Screenshots
+
+*Screenshots collected as evidence during the activities (stored in the **`/screenshots/`** folder):*
 
 ![whois output](/screenshots/1_whois.png)
 
