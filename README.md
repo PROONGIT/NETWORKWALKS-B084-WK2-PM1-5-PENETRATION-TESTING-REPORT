@@ -299,6 +299,16 @@ The outputs files and screenshots are respectively stored in the **`/outputs_fil
 
 ![windows_mac output](/screenshots/ipconfig_all.png)
 
+---
+
+## Project Short Video
+
+We recorded a short video of the project completion.
+
+https://github.com/user-attachments/assets/52be1bf5-5ebd-4a3c-bce6-dbcb8a2232c7
+
+---
+
 -End-
 
 ---
